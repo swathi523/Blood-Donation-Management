@@ -1,0 +1,231 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./img/blood3.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 75, 92, 0.8); /* Semi-transparent red background for the header */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: sticky; /* Keeps header visible at the top when scrolling */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures header stays above other content */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color change on hover */
+    display: flex;
+    flex-direction: column;
+}
+
+header:hover {
+    background-color: rgba(212, 68, 74, 0.8); /* Darker red background on hover */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox layout for horizontal navigation */
+    justify-content: space-between; /* Spreads nav items evenly */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds spacing between list items */
+    flex: 1; /* Ensures each list item takes equal space */
+}
+
+nav ul li a {
+    color: white; /* White text for nav links */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+    display: flex;
+}
+
+nav ul li a:hover {
+    color: #d3d3d3; /* Light gray text color on hover */
+}
+
+/* Main Section Styles */
+main {
+    flex: 1; /* Takes up the remaining space for a full-page layout */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    animation: fadeIn 1.2s ease-in-out; /* Smooth fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Starts with content slightly above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Moves content into place */
+    }
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background for content */
+    padding: 20px;
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a slight 3D effect */
+    color: #333; /* Dark text color */
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-around; /* Evenly spaces the buttons */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.buttons a {
+    background-color: #ff4b5c; /* Bright red button background */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.buttons a:hover {
+    background-color: #d4444a; /* Darker red on hover */
+}
+
+/* Form Elements */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid #ff4b5c; /* Red border around form fieldset */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #ff4b5c; /* Red background for submit/reset buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #d4444a; /* Darker red on hover */
+}
+
+/* Dashboard Styles */
+section.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect for dashboard */
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.dashboard-info {
+    margin-bottom: 20px;
+}
+
+.activity-grid {
+    margin-top: 20px;
+}
+
+.activity-item {
+    background-color: #f7f7f7; /* Light gray background for activity items */
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light gray borders */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(255, 75, 92, 0.8); /* Semi-transparent red background for the footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stacks nav items vertically on smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column; /* Stacks buttons vertically */
+    }
+
+    .buttons a {
+        margin: 10px 0;
+    }
+}

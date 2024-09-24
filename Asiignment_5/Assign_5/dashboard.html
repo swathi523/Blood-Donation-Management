@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Blood Donation Website</title>
+    <link rel="stylesheet" href="./assests/css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Blood Donation Website</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <main>
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <p>Welcome to your dashboard. Below is your recent activity and personal information.</p>
+            
+            <div class="dashboard-info">
+                <!-- Recent Activity Section (using grid) -->
+                <div class="recent-activity">
+                    <h3>Recent Activities</h3>
+                    <div class="activity-grid">
+                        <div class="activity-item">Blood Donation on 2023-09-15</div>
+                        <div class="activity-item">Donor Camp Participation on 2023-08-28</div>
+                        <div class="activity-item">Campaign Volunteer on 2023-07-10</div>
+                        <div class="activity-item">Profile Updated on 2023-06-22</div>
+                    </div>
+                </div>
+
+                <!-- User Info Section (using flex) -->
+                <div class="user-info">
+                    <h3>Your Information</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Date of Birth</th>
+                                <th>College</th>
+                                <th>Degree</th>
+                                <th>Year of Passing</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Super Six Squad</td>
+                                <td>Team</td>
+                                <td>2004-10-19</td>
+                                <td>Krishna Veni College</td>
+                                <td>B.Tech</td>
+                                <td>2020</td>
+                                <td>mail@gmail.com</td>
+                                <td>1234567892</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Blood Donation. All rights reserved.</p>
+        <p>Contact us: contact@blooddonation.com</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
